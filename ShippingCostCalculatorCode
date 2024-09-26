@@ -1,0 +1,21 @@
+public class ShipCostCalculator {
+    public static void main(String[] args) {
+        // Inputs
+        double itemPrice = 150.00; // My value that I entered
+
+        // Calculate the shipping cost
+        double shipCost;
+        if (itemPrice >= 100) {
+            shipCost = 0;
+        } else {
+            shipCost = itemPrice * 0.02;
+        }
+
+        // Calculate the total price
+        double total = itemPrice + shipCost;
+
+        // The Output results
+        System.out.println("Shipping Cost: $" + shipCost);
+            System.out.println("Total Price: $" + total);
+    }
+}
